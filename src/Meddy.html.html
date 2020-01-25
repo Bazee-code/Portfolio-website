@@ -1,0 +1,96 @@
+<!-- front end of our meditation app -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Meddy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm py-3 bg-warning navbar-dark">
+		<!-- logo -->
+		<a href="index.html" class="navbar-brand">Meddy</a>
+		<!-- collapsible btn -->
+		<button class="navbar-toggler" data-toggle="collapse"
+		data-target="#navBarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- links -->
+		<div class="collapse navbar-collapse" id="navBarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About Creator</a>
+				</li>
+				<li class="nav-item">
+					<!-- Search form -->
+					  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		<!-- home section -->
+	<section id="home-section" class="py-5">
+		<div class="app ">
+			<!-- default video that plays when we open app -->
+			<div class="vid-container">
+				<video loop>
+					<source src="./video/rain.mp4" type="video/mp4">
+				</video>
+			</div>
+			<!-- app contains 3 sections -->
+			<!-- time buttons section -->
+			<div class="time-select">
+				<button data-time="120" class="btn btn-outline-warning">2 Minutes</button>
+				<button data-time="300" class="btn btn-outline-warning">5 Minutes</button>
+				<button data-time="600" class="btn btn-outline-warning">10 Minutes</button>
+			</div>
+
+			<!-- play button section -->
+			<!-- contain time graphics and animations -->
+			<div class="play-container">
+				<audio class="song">
+					<source src="./sounds/rain.mp3" >
+				</audio>
+				<!-- play button -->
+				<img src="./svg/play.svg" alt="playbutton" class="playbutton">
+				<!-- svgs to display time effect animation -->
+				<svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+				</svg>
+
+				<svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+				</svg>
+
+				<h2 class="time-display text-white">0.00</h2>
+			</div>
+
+			<!-- weather section -->
+			<!-- you get to choose which video plays in background from this section -->
+			<div class="weather-section">
+				<button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" class="btn btn-secondary btn-outline-secondary"><img src="./svg/rain.svg"></button>
+				<button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" class="btn btn-warning btn-outline-warning"><img src="./svg/beach.svg"></button>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section -->
+	<section id="footer-section" class="py-3 bg-dark ">
+		<div class="container">
+			<p class="text-white text-center">Created By Eugene Obare &copy2019</p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	
+ 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
