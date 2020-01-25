@@ -2,6 +2,9 @@
 const express = require('express');
 const http =require('http');
 
+// deploying to heroku
+const port = process.env.PORT || 3000;
+
 // express app
 const app = express();
 let server = http.createServer(app);
@@ -10,6 +13,6 @@ let server = http.createServer(app);
 app.use(express.static('./src'));
 
 // bind app to port
-app.listen(3000,()=>{
-	console.log("Connected to port 3000!");
+app.listen(port,()=>{
+	console.log(`Connected to port ${port}`);
 });
