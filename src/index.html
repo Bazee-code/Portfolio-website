@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap 4 Starter Pack</title>
+  <title>Eugene's Portfolio</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,24 +21,25 @@
           <div class="d-flex flex-column bg-dark">
             <div class="p-5 bg-dark text-white">
               <div class="name d-flex flex-row justify-content-between align-items-center">
-                <h1 class="display-4">Eugene Obare</h1>
+                <h1 class="display-4"s>Eugene Obare</h1>
                 <div >
-                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-github"></i>
+                  <a href="https://github.com/Bazee-code"></a>
                 </div>
                 <div >
-                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-linkedin"></i>
                 </div>
                 <div >
                   <i class="fa fa-instagram"></i>
                 </div>
                 <div >
-                  <i class="fa fa-snapchat"></i>
+                  <i class="fa fa-facebook"></i>
                 </div>
               </div>
           </div>
 
             <div class="p-4 bg-black text-white ">
-              <p>Beginner Full Stack Web Developer</p>
+              <p>Full Stack Web Developer</p>
               <p class="small">Click the widgets below to find out more</p>
             </div>
 
@@ -48,9 +49,14 @@
                 <i class="fa fa-home d-block"></i>Home
               </div>
             
+               <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#about">
+                <i class="fa fa-envelope d-block"></i>About Me
+              </div>
+
               <div class="port-item p-4 bg-warning" data-toggle="collapse" data-target="#work">
                 <i class="fa fa-folder-open d-block"></i>Projects
               </div>
+              
                <div class="port-item p-4 bg-danger" data-toggle="collapse" data-target="#contact">
                 <i class="fa fa-envelope d-block"></i>Contacts
               </div>
@@ -65,12 +71,12 @@
   <div class="collapse show" id="home">
     <div class="card">
       <div class="card-body bg-primary text-white py-5">
-        <h2>Welcome to my portfolio website</h2>
+        <h3 class="text-center">Welcome to my portfolio website</h3>
       </div>
     </div>
-    <div class="card">
+    <div class="card border-primary">
      <div class="card-body py-5">
-       <h3>My Skills</h3>
+       <h3 class="text-center">My Skills</h3>
        <p></p>
        <hr>
        <h4>HTML</h4>
@@ -81,57 +87,126 @@
        <div class="progress mb-3">
          <div class="progress-bar bg-success" style="width:100%"></div>
        </div>
-       <h4>Javascript</h4>
+       <h4>Javascript / ES6 </h4>
        <div class="progress mb-3">
-         <div class="progress-bar bg-success" style="width:75%"></div>
+         <div class="progress-bar bg-success" style="width:80%"></div>
        </div>
        <h4>NodeJs</h4>
        <div class="progress mb-3">
+         <div class="progress-bar bg-success" style="width:75%" ></div>
+       </div>
+        <h4>ExpressJs</h4>
+       <div class="progress mb-3">
          <div class="progress-bar bg-success" style="width:70%" ></div>
        </div>
-       <h4>React Js</h4>
+       <h4 class="mt-2">ReactJs</h4>
        <div class="progress">
-         <div class="progress-bar bg-success" style="width:40%"></div>
+         <div class="progress-bar bg-success" style="width:60%"></div>
        </div>
-       <h4>MongoDB & MongooseDB</h4>
+       <h4 class="mt-2">MongoDB & MongooseDB</h4>
        <div class="progress">
          <div class="progress-bar bg-success" style="width:80%"></div>
        </div>
+       <h4 class="mt-2">Redux</h4>
+       <div class="progress">
+         <div class="progress-bar bg-success" style="width:30%"></div>
+       </div>
+       
      </div>
    </div>
   </div>
 
+  <!-- ABOUT ME SECTION -->
+  <div class="collapse" id="about">
+    <div class="card">
+      <div class="card-body bg-success text-white text-center py-5">
+        <h3>Alittle bit about me</h3>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center border-success">
+          <div class="card-body">
+            <h3>Work experience</h3>
+            <p>__________</p>
+            <h4>KPMG IT INTERNSHIP(2017)</h4>
+            <p>Installed new software applications while also updating the old ones and  confirming that everything was operational . Also performed troubleshooting to
+           identify software performance issues. Monitored network and system operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center text-white bg-success ">
+          <div class="card-body">
+            <h4>Soft Skills</h4>
+            <p>________</p>
+              <p>Strong work ethic.</p>
+              <p>Great learner and always curious to learn more.</p>
+              <p>Ability to work under pressure.</p>
+              <p>Critical thinker.</p>
+              <p>Effective communication skills and a team player.</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center border-success">
+          <div class="card-body">
+            <h3>Referees</h3>
+            <p>_________</p>
+            <p>Mr.George Kamau</p>
+            <p>0709576486</p>
+            <p class="small">Former supervisor at KPMG</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
 
     <!-- WORK SECTION -->
   <div class="collapse" id="work">
     <div class="row">
-      <div class="col-md-4 ">
-          <div class="card mt-2 bg-warning">
+
+      <div class="col-md-3">
+          <div class="card mt-2 border-warning text-center">
             <div class="card-body">
-              <h3 >Furniture E-commerce site</h3>
+              <p class="small">Furniture E-commerce site</p>
               <img src="" class="img-fluid">
-              <p >Can be accessed below</p>
-              <a href="eugene-comfy-house-js.netlify.com">Click here</a>
+              <p>Deployed locally</p>
+              <img src="./img/house.jpg" class="img-fluid">
             </div>
           </div>
       </div>
-      <div class="col-md-4">
-          <div class="card mt-2 bg-warning">
+      <div class="col-md-3">
+          <div class="card mt-2 border-warning text-center">
             <div class="card-body">
-              <h3 >Meditation WebApp Prototype</h3>
-              <img src="" class="img-fluid">
-              <p >Not deployed yet</p>
-              <a href="Meddy.html">Click here for preview</a>
+              <p class="small" >Charity website(GiveBack Kenya)</p>
+              <p>Deployed locally</p>
+              <img src="./img/charity.png" class="img-fluid">
             </div>
           </div>
       </div>
-      <div class="col-md-4">
-          <div class="card bg-warning mt-2">
+      <div class="col-md-3">
+          <div class="card border-warning mt-2 text-center">
             <div class="card-body ">
-              <h3 >Chatroom App Prototype</h3>
-              <img src="" class="img-fluid">
-              <p >Not deployed yet</p>
-              <a href="chatRoom.html">Click here for preview</a>
+              <p class="small" >Chatroom App using sockets</p>
+              <p>Deployed locally</p>
+              <img src="./img/chatapp.png" class="img-fluid">
+            </div>
+          </div>
+      </div>
+       <div class="col-md-3">
+          <div class="card mt-2 border-warning text-center">
+            <div class="card-body">
+              <p class="small">Apegram</p>
+              <p>Twitter clone App. </p>
+              <p>Status: Still building...</p>
+              <img src="./img/ape.png" class="img-fluid">
             </div>
           </div>
       </div>
@@ -141,19 +216,22 @@
     <!-- CONTACT SECTION -->
   <div class="collapse " id="contact">
     <div class="card">
-      <div class="card-body bg-danger text-white">
+      <div class="card-body bg-danger text-white text-center">
         <h3>Contact</h3>
       </div> 
     </div>
-    <div class="card">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="card text-center border-danger">
       <div class="card-body">
         <h3>Get in Touch</h3>
-        <a href="https://github.com/Bazee-code">My Github</a>
+        <i class="fa fa-github"></i><a href="https://github.com/Bazee-code">My Github</a>
         <form class="mt-2">
           <div class="form-group text-white">
             <div class="input-group input-group-lg mb-2">
               <span> <i class="fa fa-user p-3 bg-danger"></i></span>
-              <input type="text" name="username" placeholder="Name:Eugene Obare" class="form-control bg-black">
+              <input type="text" name="username" placeholder="Name : Eugene Obare" class="form-control bg-black">
             </div>
             <div class="input-group input-group-lg mb-2">
               <span> <i class="fa fa-envelope p-3 bg-danger"></i></span>
@@ -161,21 +239,27 @@
             </div>
             <div class="input-group input-group-lg mb-2">
               <span> <i class="fa fa-pencil py-5 px-3 bg-danger"></i></span>
-              <textarea class="form-control bg-black">Hope you enjoyed my portfolio website and feedback would be greatly appreciated.</textarea>
+              <textarea class="form-control bg-black" placeholder="Hope you enjoyed my portfolio website and feedback would be greatly appreciated."></textarea>
             </div>
             <a href="#home" class="btn btn-danger btn-block btn-lg">Submit</a>
           </div>
         </form>
     </div>
   </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    
   </div>
 
   <!-- DOWNLOAD SECTION -->
-  <section id="download-section" class="bg-dark p-4">
-    <div class="row">
+  <section id="download-section" class="py-3 bg-dark mt-2">
+    <!-- <div class="row">
       <div class="col-md-6"><a href="#home" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download Resume</a></div>
+    </div> -->
+    <div class="container">
+      <p class="text-center lead text-white">Email : eugeneobare@gmail.com</p>
     </div>
-    
   </section>
   </div>
 
